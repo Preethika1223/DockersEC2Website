@@ -3,7 +3,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install wget unzip -y
 WORKDIR /usr/share/nginx/html
 COPY default.conf /etc/nginx/sites-enabled/
-ADD C:\Users\ADMIN\Desktop\github projects\developer-portfolio-preethika.zip .
+ADD https://drive.google.com/file/d/1_yZE3-ToR82zzM2otGAX2k5i34xIRfAk/view?usp=drive_link/developer-portfolio-preethika.zip .
 RUN unzip developer-portfolio-preethika.zip
 RUN mv developer-portfolio-preethika/* .
 RUN rm -rf developer-portfolio-preethika developer-portfolio-preethika.zip
